@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .text {
+            font-size: 24px;
+            font-weight: bold;
+            display: none; 
+            margin: 10px;
+        }
+        #hello { color: red; }
+        #name { color: blue; }
+        #welcome { color: green; }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome Page</h1>
+
+    <p id="hello" class="text">Hello</p>
+    <p id="name" class="text">I'm Marina</p>
+    <p id="welcome" class="text">Welcome to my first webpage</p>
+
+    <button onclick="showText()">Show Text</button>
+
+    <script>
+        function showText() {
+            document.getElementById("hello").style.display = "block";
+            document.getElementById("name").style.display = "block";
+            document.getElementById("welcome").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
